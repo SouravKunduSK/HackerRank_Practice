@@ -1,0 +1,8 @@
+Steps to solve:
+1. Read an interger t for test cases.
+2. Read n for 0 to t-1.
+3. Call CalculateSum(n) function.
+  a. Check if n<=0, return 0;
+  b. Else call SumOfMultiplies(int n, int num); n = 3, 5, 15 [15 for avoid counting twice] and return SumOfMultiplies(3, num) + SumOfMultiplies(5, num) - SumOfMultiplies(15, num);
+    => Calculate the largest multiple of n below num using [k = (num - 1)/n;] 
+    => Calculate the sum of multiples of n using [(n*k*(k+1))/2;]
